@@ -23,34 +23,30 @@ echo "<br>";
       $this -> name = $name;
 
     }
+
+    public function PrintMe()
+    {
+      echo
+      "id: " . $this -> id . "<br>" .
+      "type: " . $this -> type . "<br>" .
+      "cost: " . $this -> cost . "<br>" .
+      "price: " . $this -> price . "<br>" .
+      "name: " . $this -> name . "<br>";
+
+    }
   }
 
   // questi sono gli oggetti che sono composti da classi che a loro volta hanno attributi
   // oggetti diversi possono avere una classe in comune
 
   $oggetto1 = new Prodotto(1, "Computer", 50, 99, "Macbook");
-  echo "Id oggetto: " . $oggetto1 -> cost;
+  $oggetto1 -> PrintMe();
   echo "<br>";
+
 
 
   $oggetto2 = new Prodotto(2, "Casa", 3, 15, "Padella");
-  echo "Id oggetto: " . $oggetto2 -> cost;
+  $oggetto2 -> PrintMe();
   echo "<br>";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
  ?>
